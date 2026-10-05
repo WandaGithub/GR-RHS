@@ -1,0 +1,41 @@
+{
+  "experiment_id": "normal_means_smoke",
+  "output": "results/smoke/normal_means",
+  "seed": 12345,
+  "p": 50,
+  "replications": 1,
+  "amplitudes": [
+    0.25,
+    3.0
+  ],
+  "group_sizes": [
+    10,
+    10,
+    10,
+    10,
+    10
+  ],
+  "reference_group": 0,
+  "varying_group": 1,
+  "signals_per_active_group": 5,
+  "models": [
+    "rhs",
+    "grrhs"
+  ],
+  "arms": [
+    "fixed",
+    "learned"
+  ],
+  "reference_signal": 1.0,
+  "noise_scale": 1.0,
+  "p0": 10,
+  "slab_variance_scale": 1.0,
+  "alpha_b": 1.0,
+  "beta_b": 1.0,
+  "chains": 2,
+  "parallel_chains": 2,
+  "iter_warmup": 100,
+  "iter_sampling": 100,
+  "adapt_delta": 0.9,
+  "max_treedepth": 8
+}

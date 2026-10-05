@@ -1,0 +1,46 @@
+{
+  "experiment_id": "normal_means_paper",
+  "output": "results/normal_means/normal_means50_sigma1",
+  "seed": 12345,
+  "p": 50,
+  "replications": 50,
+  "amplitudes": [
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0,
+    3.0
+  ],
+  "group_sizes": [
+    10,
+    10,
+    10,
+    10,
+    10
+  ],
+  "reference_group": 0,
+  "varying_group": 1,
+  "signals_per_active_group": 5,
+  "models": [
+    "rhs",
+    "grrhs"
+  ],
+  "arms": [
+    "fixed",
+    "learned"
+  ],
+  "reference_signal": 1.0,
+  "noise_scale": 1.0,
+  "p0": 10,
+  "slab_variance_scale": 1.0,
+  "alpha_b": 1.0,
+  "beta_b": 1.0,
+  "chains": 4,
+  "parallel_chains": 4,
+  "iter_warmup": 2000,
+  "iter_sampling": 2000,
+  "adapt_delta": 0.99,
+  "max_treedepth": 12
+}

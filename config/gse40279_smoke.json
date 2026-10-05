@@ -1,0 +1,38 @@
+{
+  "experiment_id": "gse40279_smoke",
+  "data_dir": "data/gse40279_data/prepared",
+  "data_root": "data/gse40279_data",
+  "output": "results/smoke/gse40279",
+  "expected_n": 656,
+  "expected_p": 500,
+  "expected_groups": 28,
+  "p0": 50,
+  "r2d2_prior_mean": 0.1657,
+  "group_r2_prior_mean": 0.2004,
+  "r2_prior_precision": 3.0,
+  "folds": 5,
+  "replications": 1,
+  "replication_start": 1,
+  "replication_end": null,
+  "seed": 12345,
+  "chains": 2,
+  "warmup": 50,
+  "draws": 50,
+  "adapt_delta": 0.9,
+  "max_treedepth": 8,
+  "slab_variance_scale": 0.001,
+  "beta_prime_alpha": 1.0,
+  "beta_prime_beta": 1.0,
+  "paired_seed_methods": false,
+  "methods": [
+    "GR_RHS",
+    "RHS"
+  ],
+  "preparation": {
+    "top_k": 500,
+    "block_gap_bp": 1000,
+    "min_group_size": 3,
+    "max_group_size": 30,
+    "chunk_size": 4000
+  }
+}

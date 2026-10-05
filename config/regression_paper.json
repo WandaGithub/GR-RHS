@@ -1,0 +1,70 @@
+{
+  "experiment_id": "grouped_regression_paper",
+  "output": "results/regression/confirmatory",
+  "base_seed": 314159,
+  "fit_seed_namespace": "tail-mechanism",
+  "prior_p0": 100.0,
+  "r2d2_prior_mean": 0.48,
+  "group_r2_prior_mean": 0.57,
+  "r2_prior_precision": 3.0,
+  "slab_variance_scale": 1.0,
+  "beta_prime_alpha": 1.0,
+  "beta_prime_beta": 1.0,
+  "n_replications": 100,
+  "methods": [
+    "GR_RHS",
+    "RHS",
+    "HORSESHOE",
+    "R2D2",
+    "GROUP_R2",
+    "GHS",
+    "GIGG"
+  ],
+  "conditions": [
+    "hom",
+    "het_tail"
+  ],
+  "target_r2_levels": [
+    0.3,
+    0.7
+  ],
+  "information_levels": [
+    20
+  ],
+  "dgp": {
+    "n": 200,
+    "n_test": 1000,
+    "p": 500,
+    "group_count": 5,
+    "within_correlation": 0.8,
+    "heterogeneous_tail_scales": [
+      0.5,
+      0.5,
+      1.0,
+      2.0,
+      3.0
+    ],
+    "homogeneous_tail_scale": null
+  },
+  "sampler": {
+    "chains": 4,
+    "warmup": 3000,
+    "draws": 3000,
+    "adapt_delta": 0.995,
+    "max_treedepth": 15
+  },
+  "sampler_overrides": {
+    "HORSESHOE": {
+      "warmup": 10000,
+      "draws": 10000
+    },
+    "GHS": {
+      "warmup": 10000,
+      "draws": 10000
+    },
+    "GIGG": {
+      "warmup": 10000,
+      "draws": 10000
+    }
+  }
+}

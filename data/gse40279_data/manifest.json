@@ -1,0 +1,17 @@
+{
+  "dataset": "GSE40279",
+  "files": [
+    {
+      "role": "methylation_beta_matrix",
+      "filename": "GSE40279_average_beta.txt.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE40nnn/GSE40279/suppl/GSE40279_average_beta.txt.gz",
+      "sha256": "d980065c653381ce29b5bfa54f462a1dd99853bb3796cccd0ec15d78043eb953"
+    },
+    {
+      "role": "platform_annotation",
+      "filename": "GPL13534_HumanMethylation450_15017482_v.1.1.csv.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPL13nnn/GPL13534/suppl/GPL13534_HumanMethylation450_15017482_v.1.1.csv.gz",
+      "sha256": "df3d5009d9b5b878507ba330bbcd7d2012455f6d0aa92c2df897f53a28452c33"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "experiment_id": "gse40279_paper",
+  "data_dir": "data/gse40279_data/prepared",
+  "data_root": "data/gse40279_data",
+  "output": "results/real_data/gse40279_paper_cv",
+  "expected_n": 656,
+  "expected_p": 500,
+  "expected_groups": 28,
+  "p0": 50,
+  "r2d2_prior_mean": 0.1657,
+  "group_r2_prior_mean": 0.2004,
+  "r2_prior_precision": 3.0,
+  "folds": 5,
+  "replications": 20,
+  "replication_start": 1,
+  "replication_end": null,
+  "seed": 12345,
+  "chains": 4,
+  "warmup": 3000,
+  "draws": 3000,
+  "sampler_overrides": {
+    "GHS": {
+      "warmup": 10000,
+      "draws": 10000,
+      "adapt_delta": 0.995,
+      "max_treedepth": 15
+    },
+    "GIGG": {
+      "warmup": 10000,
+      "draws": 10000,
+      "adapt_delta": 0.995,
+      "max_treedepth": 15
+    }
+  },
+  "adapt_delta": 0.99,
+  "max_treedepth": 15,
+  "slab_variance_scale": 0.001,
+  "beta_prime_alpha": 1.0,
+  "beta_prime_beta": 1.0,
+  "paired_seed_methods": false,
+  "methods": [
+    "GR_RHS",
+    "RHS",
+    "HORSESHOE",
+    "R2D2",
+    "GROUP_R2",
+    "GHS",
+    "GIGG"
+  ],
+  "preparation": {
+    "top_k": 500,
+    "block_gap_bp": 1000,
+    "min_group_size": 3,
+    "max_group_size": 30,
+    "chunk_size": 4000
+  }
+}
